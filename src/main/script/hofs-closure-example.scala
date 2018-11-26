@@ -1,9 +1,8 @@
-/**
+*
   * $DESCRIPTION
   *
   * @author DGQ
   * @since 2018/11/21
-  */
 var factor = 2
 val multiplier = (i: Int) => i * factor
 var result = (1 to 10) filter (_ % 2 == 0) map multiplier reduce (_ * _)
