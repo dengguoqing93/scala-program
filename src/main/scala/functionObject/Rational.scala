@@ -6,7 +6,13 @@ package functionObject
   * @author DGQ
   * @since 2018/11/24
   */
-class Rational(n: Int, d: Int) {
+class Rational(n: Int, d: Int) extends Ordered[Rational] {
+
+
+  override def compare(that: Rational): Int = {
+    this.number * that.denon - that.number * this.denon
+  }
+
   override def toString: String = number + "/" + denon
 
   require(d != 0)
