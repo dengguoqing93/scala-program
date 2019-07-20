@@ -1,4 +1,4 @@
-/*
+
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -23,4 +23,4 @@ def doWork(index: Int) = {
 
 }
 sleep(1000)
-println("Finito")*/
+println("Finito")
